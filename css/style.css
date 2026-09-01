@@ -34,6 +34,11 @@ main {
     border: 0.25em solid var(--color-primary);
 }
 
+.group-links {
+    display: inline-flex;
+    gap: 1rem;
+}
+
 a {
     text-decoration: none;
     border-bottom: 0.15rem solid var(--color-primary);
@@ -45,12 +50,12 @@ a {
 .icon-link {
     vertical-align: middle;
     height: 2rem;
+    padding: 0.1rem;
 }
 
 .icon-circle {
     border-radius: 100rem;
     background-color: white;
-    padding: 0.1rem;
     height: calc(2rem - 0.1rem * 2);
 }
 
@@ -60,6 +65,7 @@ a:hover {
 }
 
 ul {
+    border-radius: 1rem;
     width: min-content;
     margin: auto;
     white-space: nowrap;
@@ -72,6 +78,10 @@ ul {
 ul li {
     width: min-content;
     text-align: left;
+}
+
+ul li ul {
+    padding: 0.75rem 1.5rem;
 }
 
 ul li::before {
