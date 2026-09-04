@@ -33,6 +33,13 @@ main {
     border-radius: 1000rem;
     border: 0.25em solid var(--color-primary);
 }
+h2{
+    border-top: 0.15rem solid var(--color-primary);
+}
+h4{
+    border-bottom: 0.15rem solid var(--color-primary);
+    width: min-content;
+}
 
 .group-links {
     display: inline-flex;
@@ -64,18 +71,24 @@ a:hover {
     color: var(--color-bg);
 }
 
-ul {
+ul, ol{
     border-radius: 1rem;
     width: min-content;
     margin: auto;
     white-space: nowrap;
+    padding: 1.5rem 3rem;
+}
+ul{
     list-style: none;
     background-color: var(--color-bg-opacity);
-    padding: 1.5rem 3rem;
+}
+ol{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 
-ul li {
+ul li, ol li {
     width: min-content;
     text-align: left;
 }
