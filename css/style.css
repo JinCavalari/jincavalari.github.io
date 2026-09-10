@@ -73,7 +73,6 @@ a:hover {
 
 ul, ol{
     border-radius: 1rem;
-    width: min-content;
     margin: auto;
     white-space: nowrap;
     padding: 1.5rem 3rem;
@@ -89,7 +88,6 @@ ol{
 
 
 ul li, ol li {
-    width: min-content;
     text-align: left;
 }
 
@@ -99,4 +97,8 @@ ul li ul {
 
 ul li::before {
     content: "- ";
+}
+
+p{
+    white-space: wrap;
 }
