@@ -41,10 +41,19 @@ h4{
     width: min-content;
 }
 
+.desactivate{
+    pointer-events: none;
+    filter: grayscale(100%);
+}
+
 .group-links {
-    display: inline-flex;
+    display: block;
     gap: 1rem;
 }
+.group-links div{
+    padding: 1rem;
+}
+
 
 a {
     text-decoration: none;
